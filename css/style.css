@@ -479,12 +479,11 @@ gap: 40px;
     background-color: #31D0AA;
 }
 
-.form-sub {
+.footer-form {
     display: flex;
-    flex-direction: column;
 }
 
-.sub-label {
+.sub-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -511,12 +510,29 @@ gap: 40px;
     padding: 8px 24px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: var(--color-primery-inverted);
+    background-color: var(--color-brand-light);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    border: none;
+    cursor: pointe
+    transition: background-color var(--transition);
 }
 
+.button-sub:hover,
+.button-sub:focus {
+    background-color: var(--color-brand-dark);
+}
 .sub-icon {
     width: 24px;
     height: 24px;
-    background-color: var(--color-primery-inverted);
+    fill: var(--color-primery-inverted);
     margin-left: 16px;
 }
 
@@ -682,14 +698,22 @@ gap: 40px;
     appearance: none;
 }
 
+.checkbox-input:checked +.form-checkbox-icon {
+    background-color: var(--color-brand-dark);
+}
+
+
 .checkbox-input:checked +.form-checkbox-icon .checkbox-icon {
     background-color: var(--color-brand-dark);
 }
 
 .form-checkbox-icon {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 16px;
     height: 16px;
+    color: var(--color-background-primery);
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
     margin-right: 8px;
@@ -697,8 +721,8 @@ gap: 40px;
 
 .checkbox-icon {
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 8px;
     fill: currentColor; 
 }
 
