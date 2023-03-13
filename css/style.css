@@ -671,13 +671,22 @@ gap: 40px;
     border-color: var(--color-brand-light);
 }
 
+/* Checkbox */
 .checkbox-label {
     display: flex;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 24px; 
 }
 
-.checkbox-icon {
+.checkbox-input {
+    appearance: none;
+}
+
+.checkbox-input:checked +.form-checkbox-icon .checkbox-icon {
+    background-color: var(--color-brand-dark);
+}
+
+.form-checkbox-icon {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -686,16 +695,12 @@ gap: 40px;
     margin-right: 8px;
 }
 
-.checkbox-input {
-    appearance: none;
+.checkbox-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    fill: currentColor; 
 }
-
-.checkbox-input:checked +.checkbox-icon {
-    /* background-image: url(../images/icon-click.svg); */
-    background-repeat: no-repeat;
-    background-color: var(--color-brand-dark); 
-}
-
 
 .checkbox-text {
     font-size: 12px;
@@ -705,12 +710,12 @@ gap: 40px;
     cursor: pointer;
 }
 
-.button-form {
-    margin: 0 auto;
-}
-
 .checkbox-link {
     color: var(--color-brand-light);
+}
+
+.button-form {
+    margin: 0 auto;
 }
 
 /* Portfolio */
