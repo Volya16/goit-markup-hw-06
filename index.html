@@ -423,6 +423,28 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <form class="footer-form">
+            <div class="form-sub">
+              <label class="sub-label" for="subscribe-email" name="sub"
+                >Subscribe</label
+              >
+              <input
+                class="sub-input"
+                type="email"
+                id="subscribe-email"
+                name="sub"
+                placeholder="E-mail"
+              />
+            </div>
+            <button class="button button-sub" type="submit">
+              Subscribe
+              <svg class="sub-icon">
+                <use href="./images/icon-click.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -497,20 +519,23 @@
               placeholder="Text input"
             ></textarea>
           </div>
-
-          <div class="checkbox-field">
-            <input
+          <label class="checkbox-label" for="conditions"
+            ><input
               class="checkbox-input"
               id="conditions"
               type="checkbox"
               name="conditions"
             />
-            <span class="checkbox-icon"></span>
-            <label class="checkbox-label" for="conditions"
+            <span class="checkbox-icon">
+              <svg>
+                <use href="./images/click.jpg#icon-click"></use>
+              </svg>
+            </span>
+            <span class="checkbox-text"
               >I accept the terms and conditions of the
-              <a class="checkbox-link" href="#">Privacy Policy</a>
-            </label>
-          </div>
+              <a class="checkbox-link" href="#">Privacy Policy</a></span
+            >
+          </label>
           <button class="button button-form" type="submit">Send</button>
         </form>
       </div>
