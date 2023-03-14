@@ -400,7 +400,6 @@ gap: 40px;
 
 /*Footer */
 .footer {
-    position: relative;
     background-color: var(--color-secondary);
     padding: 100px 0;
     justify-content: flex-start;
@@ -433,6 +432,10 @@ gap: 40px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+
+.footer-adress {
+    margin-right: 80px;
 }
 
 .footer-title {
@@ -477,7 +480,6 @@ gap: 40px;
 }
 
 .subscription {
-    position: absolute;
     top: 100px;
     right: 159px;
 }
