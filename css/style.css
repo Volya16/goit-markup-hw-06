@@ -659,6 +659,8 @@ gap: 40px;
     transform: translateY(-50%);
     width: 18px;
     height: 24px;
+    fill: var(--color-modal-subtitle);
+    transition: fill var(--transition);
 }
 
 .form-input:hover +.form-svg,
