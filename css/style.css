@@ -667,6 +667,7 @@ gap: 40px;
 }
 
 .form-textarea {
+    display: block;
     font-size: 12px;
     line-height: 1.333;
     letter-spacing: 0.04em;
